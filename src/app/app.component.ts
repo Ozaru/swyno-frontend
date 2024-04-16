@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.http.get<string>(`/api`, { responseType: "text" as "json"}).subscribe(x => {
+    this.http.get<string>(`${environment.apiUrl}`, { responseType: "text" as "json"}).subscribe(x => {
       this.teste = x
     })
   }
