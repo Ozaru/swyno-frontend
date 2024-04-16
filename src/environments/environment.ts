@@ -1,3 +1,4 @@
 export const environment = {
-    apiUrl: "http://swyno-backend:3000",
+    production: true,
+    apiUrl: "http://swyno-backend:8081",
 }

@@ -68,12 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "swyno-frontend:build:production",
-              "proxyConfig": "src/proxy.conf.json"
-            },
+              "buildTarget": "swyno-frontend:build:production"            },
             "development": {
               "buildTarget": "swyno-frontend:build:development",
-              "proxyConfig": "src/proxy-development.conf.json"
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

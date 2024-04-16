@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +19,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.http.get<string>(`/api`, { responseType: "text" as "json"}).subscribe(x => {
-      alert(x)
+    this.http.get<string>(`${environment.apiUrl}`, { responseType: "text" as "json"}).subscribe(x => {
       this.teste = x
     })
   }
