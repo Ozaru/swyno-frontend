@@ -1,0 +1,9 @@
+.c-linha {
+    &:hover {
+        cursor: pointer;
+        background-color: lavender;
+        &:active {
+            background-color: plum;
+        }
+    }
+}
